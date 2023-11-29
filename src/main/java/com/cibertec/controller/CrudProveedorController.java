@@ -62,8 +62,8 @@ public class CrudProveedorController {
 		Map<String, Object> salida = new HashMap<>();
 		try {
 			obj.setIdProveedor(0);
-			/*obj.setFechaRegistro(new Date());
-			obj.setEstado(1);*/
+			obj.setFechaRegistro(new Date());
+			obj.setEstado(1);
 			Proveedor objSalida =  service.insertaActualizaProveedor(obj);
 			if (objSalida == null) {
 				salida.put("mensaje", Constantes.MENSAJE_REG_ERROR);
